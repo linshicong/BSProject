@@ -1,4 +1,4 @@
-package com.linshicong.bsproject.util;
+﻿package com.linshicong.bsproject.util;
 
 import android.app.Activity;
 import android.content.Context;
@@ -53,7 +53,8 @@ import static com.linshicong.bsproject.util.Constant.timeline;
  */
 public class BmobUtil {
     public static boolean isFeed = false;
-    private static final String APP_KEY = "d978b14e7fbb8285bd426ab75e738abc";
+    //Bmob申请账号替换APP_KEY
+    private static final String APP_KEY = "";
 
     /**
      * 初始化Bmob
