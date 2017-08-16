@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="cache" />
+    <version value="2" />
+    <list>
+        <mapping class="com.linshicong.bsproject.db.SkillCache"/>
+        <mapping class="com.linshicong.bsproject.db.FeedCache"/>
+        <mapping class="com.linshicong.bsproject.db.UserCache"/>
+        <mapping class="com.linshicong.bsproject.db.PostCache"/>
+        <mapping class="com.linshicong.bsproject.db.GalleyCache"/>
+    </list>
+</litepal>

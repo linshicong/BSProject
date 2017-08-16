@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="-5dp"
+        android:src="#E4E3E3"
+        tools:ignore="ContentDescription" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/skill_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/skillname"
+            android:textSize="20sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/skill_files_text"
+            style="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/feedback"
+            android:gravity="start"
+            android:hint="@string/skillfiles"
+            android:lines="10"
+            android:padding="3dp"
+            android:textSize="15sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/choose_files_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:cpb_cornerRadius="48dp"
+        app:cpb_textComplete="Success"
+        app:cpb_textError="Failed"
+        app:cpb_textIdle="@string/choonsefiles" />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/upload_files_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:cpb_cornerRadius="48dp"
+        app:cpb_textComplete="Success"
+        app:cpb_textError="Failed"
+        app:cpb_textIdle="@string/uploadfile" />
+
+</LinearLayout>

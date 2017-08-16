@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.linshicong.bsproject.activity.GalleyPhotoDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="#ffffffff"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:src="@mipmap/ic_black_ui_back_arrow"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/table_name_text"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="25dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="菲林"/>
+
+        <TextView
+            android:id="@+id/add_photo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/add"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/header"
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_below="@+id/ll_layout"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/cancel"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/number_text"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/select_all_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/selectAll"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/clear_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:text="@string/clearAll"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/header"
+        android:src="#E4E3E3"
+        tools:ignore="ContentDescription" />
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/image"
+        android:layout_above="@+id/del_btn"
+        android:layout_width="match_parent"
+        android:background="#ffffffff"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/del_btn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/delete"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>

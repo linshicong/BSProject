@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BSProject.iml" filepath="$PROJECT_DIR$/BSProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filepicker/filepicker.iml" filepath="$PROJECT_DIR$/filepicker/filepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageeditlibrary/imageeditlibrary.iml" filepath="$PROJECT_DIR$/imageeditlibrary/imageeditlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libzxing/libzxing.iml" filepath="$PROJECT_DIR$/libzxing/libzxing.iml" />
+    </modules>
+  </component>
+</project>

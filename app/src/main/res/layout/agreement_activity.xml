@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="-5dp"
+        android:src="#E4E3E3"
+        tools:ignore="ContentDescription" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="菲林用戶協議"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="欢迎使用「菲林CAMERA」。"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="请您仔细阅读以下使用规则：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="使用规则"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1.用戶須對在菲林APP的註冊信息的真實性，合法性，有效性承擔全部責任，用戶不得冒用他人；不得利用他人的名義發佈任務信息；不得惡意使用註冊賬號導致其他用戶誤認；否則菲林有權立即停止提供服務，收回其賬號並由用戶獨自承擔由此而產生的一切法律責任。" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2.用戶不得利用菲林服務製作，上載，複製，發佈，傳播或轉載以下內容:\n
+●散布謠言，擾亂社會秩序，破壞社會穩定的。\n
+●散布淫穢，色情，賭博，暴力，兇殺，恐怖或者教唆犯罪的。\n
+●侮辱或者誹謗他人，侵害他人合法權益的。\n
+●含有法律，行政法規禁止的其他內容的信息。" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="3.用戶同意遵守菲林內容與使用規範。" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="4.菲林有權對用戶使用菲林的情況進行審查和監督，如用戶在使用菲林APP過程中違反以上規則，菲林或其授權的人有權要求用戶改正或直接採取一切必要的措施（包括但不限於更改或刪除用戶張貼的內容，暫停或終止用戶使用菲林APP的權利）以減輕用戶不當行為的影響。" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="應用介紹"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="菲林APP為本人的畢業設計，服務器為Bmob後端云服務器，APP全套UI均為網上下載，如本應用有什麼涉及侵權等行為，請及時告知。" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

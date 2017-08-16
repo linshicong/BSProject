@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_timeline"
+            android:icon="@drawable/ic_timeline"
+            android:title="     個人  TIMELINE" />
+        <item
+            android:id="@+id/nav_explore"
+            android:icon="@drawable/ic_explore"
+            android:title="     廣場  EXPLORE" />
+
+        <item
+            android:id="@+id/nav_skill"
+            android:icon="@drawable/ic_private"
+            android:title="     技巧  SKILL" />
+        <item
+            android:id="@+id/nav_feed"
+            android:icon="@drawable/ic_feed"
+            android:title="     關注  FEED" />
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_setting"
+            android:title="     設置  SETTING" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="     註銷  LOGOUT" />
+    </group>
+</menu>

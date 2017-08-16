@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.temple.TempleOne">
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="0"
+        android:title="@string/share"
+        android:icon="@mipmap/ic_share"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_report"
+        android:orderInCategory="0"
+        android:title="@string/detail"
+        android:icon="@drawable/ic_others"
+        app:showAsAction="always"/>
+</menu>

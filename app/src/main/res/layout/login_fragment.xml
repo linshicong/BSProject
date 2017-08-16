@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/icon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_name"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/login_bg"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/login_btn"
+                    style="@style/loginui_bt"
+                    android:layout_marginTop="80dp"
+                    android:drawableStart="@drawable/ic_login"
+                    android:text="@string/login" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/register_btn"
+                    style="@style/loginui_bt"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/ic_register"
+                    android:text="@string/register" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:text="@string/other_ways"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/wx_btn"
+                style="@style/OtherWay"
+                android:src="@drawable/ic_login_wx"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/fb_btn"
+                style="@style/OtherWay"
+                android:src="@drawable/ic_login_fb"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/wb_btn"
+                style="@style/OtherWay"
+                android:src="@drawable/ic_login_xl"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

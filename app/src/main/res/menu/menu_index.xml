@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.temple.TempleOne">
+    <item
+        android:id="@+id/menu_msg"
+        android:icon="@drawable/ic_msg"
+        android:title="@string/msg"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_scan"
+        android:icon="@mipmap/ic_scan1"
+        android:title="@string/module"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@mipmap/ic_search"
+        android:orderInCategory="1"
+        android:title="@string/find"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/scan_erweima"
+        android:icon="@mipmap/ic_erweima"
+        android:orderInCategory="1"
+        android:title="@string/scancode"
+        app:showAsAction="always" />
+
+</menu>
